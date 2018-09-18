@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GunPickup : MonoBehaviour {
-
+    
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 		
 	}
 	
@@ -14,12 +15,12 @@ public class GunPickup : MonoBehaviour {
 		
 	}
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            other.GetComponent<FireGun>().PickupAR();
-            Destroy(gameObject);
-        }
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.tag == "Player")
+    //    {
+    //        other.GetComponent<FireGun>().PickupAR();
+    //        Destroy(gameObject);
+    //    }
+    //}
 }
